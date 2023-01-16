@@ -4,23 +4,23 @@
   var me = undefined;
 } %>
 
-<script> 
+<script>
      var dataTitle = new URLSearchParams(document.location.search).get("name");
      var description = new URLSearchParams(document.location.search).get("desc");
-     //this.goto(`${dataTitle}`) 
+     //this.goto(`${dataTitle}`)
      //console.log(this.goto(),'ydgfuyguy')
      /*document.head.innerHTML = `
      <title>${dataTitle}</title>
      <meta name="Description" CONTENT="${description}">
      `     */
       console.log(new URLSearchParams(document.location.search).get("name"),'uhsoudhsihiu')
-</script>  
+</script>
 <!DOCTYPE html>
 
 <html>
-  
-  <head>          
-    
+
+  <head>
+
     <% /* Viewport tag for sensible mobile support */ %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -58,9 +58,9 @@
     <!--STYLES END-->
   </head>
   <body>
-    
+
     <div purpose="page-wrap">
-      <header class="navbar navbar-expand-sm navbar-dark bg-dark flex-column flex-md-row justify-content-between" purpose="page-header">
+      <header class="navbar navbar-expand-sm navbar-dark bg-success flex-column flex-md-row justify-content-between" purpose="page-header">
         <a style="cursor: pointer;" class="navbar-brand mr-0" href="/"><img style="height: 20px;" class="logo" alt="NEW_APP_NAME logo" src="/images/logo.png"/></a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
@@ -217,7 +217,7 @@
           'chrome': LATEST_SUPPORTED_VERSION_BY_USER_AGENT.chrome,
           'opera': LATEST_SUPPORTED_VERSION_BY_USER_AGENT.opera
         };
-        
+
         var isUnsupportedBrowser = (
           bowser.isUnsupportedBrowser(LATEST_SUPPORTED_VERSION_BY_USER_AGENT, window.navigator.userAgent)
         );
@@ -251,8 +251,8 @@
       }
     })();//†
     </script>
-    
-  
+
+
 
   </body>
 </html>
